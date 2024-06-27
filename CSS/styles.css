@@ -1,0 +1,70 @@
+/*
+Sean Diaz
+sean_diaz@student.uml.edu
+GUI Programming HW5 
+*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%; /* dis looks da best*/
+    background-color: burlywood; /*fits the aesthetic */
+}
+#scrabble-board-container {
+    position: relative;
+    width: 750px; 
+    height: 50px; 
+    margin-bottom: 20px;
+}
+.board-square {
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Position them absolutely within the container */
+}
+#scrabble-board {
+    background-image: url('../images/Scrabble_Board_OneLine.png');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#tile-rack-container {
+    position: relative;
+    width: 350px; 
+    height: 100px;
+    margin-bottom: 20px;
+}
+#tile-rack {
+    background-image: url('../images/scrabble-tile-holder-406774_640.png');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /*so the tiles dont do that weird buggy thing where they all stack for some reason*/
+    padding: 10px;
+}
+.tile {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tile-img {
+    width: 100%;
+    height: 100%;
+}
+#score {
+    margin-bottom: 20px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px; /*round buttons look better */
+    background-color: cadetblue;
+}
